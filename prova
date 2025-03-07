@@ -1,1 +1,36 @@
-.
+<!DOCTYPE html>
+<html long="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio</title>
+    <style>
+        body {
+            background-color: green;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        }
+        nav{
+            background-color: white;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Arredi Giardino</h1>
+    <nav>
+        <ul>
+            <li>dondoli</li>
+            <li>tavoli</li>
+            <li>sedie</li>
+            <li>piante</li>
+            <li>luci</li>
+        </ul>
+    </nav>
+</body>
