@@ -1,36 +1,80 @@
 <!DOCTYPE html>
-<html long="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>esercizio</title>
+    <title>Arredi Giardino</title>
     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
         body {
-            background-color: green;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
-        h1{
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        
-        }
-        nav{
-            background-color: white;
+       
 
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            color: #2a7f62;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .navbar {
+            width: 40%;
+            text-align: left;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+        }
+
+        .navbar li {
+            margin: 10px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #2a7f62;
+        }
+
+        .text {
+            width: 50%;
+            text-align: left;
         }
     </style>
-
 </head>
 <body>
+
     <h1>Arredi Giardino</h1>
-    <nav>
-        <ul>
-            <li>dondoli</li>
-            <li>tavoli</li>
-            <li>sedie</li>
-            <li>piante</li>
-            <li>luci</li>
-        </ul>
-    </nav>
+
+    <div class="content">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Sdraio</a></li>
+                <li><a href="#">Tavoli</a></li>
+                <li><a href="#">Sedie</a></li>
+                <li><a href="#">Dondoli</a></li>
+                <li><a href="#">Piante</a></li>
+            </ul>
+        </div>
+
+      
+        <div class="text">
+            <p>I nostri articoli renderanno il tuo giardino ancora piu bello e accogliente, oer te, la tua famiglia e i tuoi amici.</p>
+        </div>
+    </div>
+
 </body>
+</html>
+
