@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indice di Massa Corporea (BMI)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #006699;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004466;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .left-column, .right-column {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .left-column {
+      background-color: #f0f8ff;
+    }
+
+    .right-column {
+      background-color: #fafafa;
+    
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+    }
+
+    button {
+      background-color: #006699;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Calcolo Indice di Massa Corporea (BMI)</h1>
+  </header>
+
+  <nav>
+    <a href="">Home</a>
+    <a href="">Calcolo BMI</a>
+    <a href="">Info</a>
+    <a href="">Contatti</a>
+  </nav>
+
+  <main>
+    <section class="left-column">
+      <h2>Calcola il tuo BMI</h2>
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" placeholder="Es. 70">
+
+      <label for="altezza">Altezza (cm):</label>
+      <input type="number" id="altezza" placeholder="Es. 170">
+
+      <button onclick="calcolaBMI()">Calcola</button>
+
+      <p id="risultato" style="margin-top: 20px; font-weight: bold;"></p>
+    </section>
+
+    <section class="right-column">
+      <h2>Cos'è il BMI e come si calcola</h2>
+      <p>L’Indice di massa corporea (IMC), anche noto come BMI (Body Mass Index), è un utile strumento, di semplice uso, per verificare se il nostro peso rientri o meno nei limiti della normalità</p>
+
+      <h3>Formula del BMI</h3>
+      <p><strong>BMI = Peso (kg) / [Altezza (m)]²</strong></p>
+      <p>Ad esempio, una persona che pesa 70 kg ed è alta 170 cm (1,70 m) avrà un BMI pari a:</p>
+      <p><em>70 / (1.7 × 1.7) = 24.22</em></p>
+
+      <h3>Classificazione secondo l'OMS:</h3>
+      <ul>
+        <li><strong>Sottopeso:</strong> &lt; 18.5</li>
+        <li><strong>Normopeso:</strong> 18.5 – 24.9</li>
+        <li><strong>Sovrappeso:</strong> 25 – 29.9</li>
+        <li><strong>Obesità:</strong> ≥ 30</li>
+      </ul>
+      
+
+      <p>Però si deve ricordare che il BMI è un valore indicativo e non tiene conto della composizione del tuo corpo</p>
+    </section>
+  </main>
+ 
+
+</body>
+</html>
